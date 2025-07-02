@@ -1,0 +1,134 @@
+// Разработка 2018-2025 DinrusPro / Dinrus Group. РНЦП Динрус.
+
+#ifndef AISIGNALCRCS_H
+#define AISIGNALCRCS_H
+
+struct AISIGNALS_CRC
+{
+	//the ctor initializations are now moved into Init since the central crc generator access must be at a known time
+	AISIGNALS_CRC();
+	//initializes all crc dependent members, called in CAISystem ctor
+	void Init();
+
+	u32 m_nOnRequestNewObstacle;
+	u32 m_nOnRequestUpdate;
+	u32 m_nOnRequestShootSpot;
+	u32 m_nOnRequestHideSpot;
+	u32 m_nOnStartTimer;
+	u32 m_nOnLastKnownPositionApproached;
+	u32 m_nOnEndApproach;
+	u32 m_nOnAbortAction;
+	u32 m_nOnActionCompleted;
+	u32 m_nOnNoPathFound;
+	u32 m_nOnApproachEnd;
+	u32 m_nOnEndFollow;
+	u32 m_nOnBulletRain;
+	u32 m_nOnBulletHit;
+	u32 m_nOnDriverEntered;
+	u32 m_nAIORD_ATTACK;
+	u32 m_nAIORD_SEARCH;
+	u32 m_nAIORD_REPORTDONE;
+	u32 m_nAIORD_REPORTFAIL;
+	u32 m_nOnChangeStance;
+	u32 m_nOnScaleFormation;
+	u32 m_nOnUnitDied;
+	u32 m_nOnUnitDamaged;
+	u32 m_nOnUnitBusy;
+	u32 m_nOnUnitSuspended;
+	u32 m_nOnUnitResumed;
+	u32 m_nOnSetUnitProperties;
+	u32 m_nOnJoinTeam;
+	u32 m_nRPT_LeaderDead;
+	u32 m_nOnSpotSeeingTarget;
+	u32 m_nOnSpotLosingTarget;
+	u32 m_nOnFormationPointReached;
+	u32 m_nOnKeepEnabled;
+	u32 m_nOnActionDone;
+	u32 m_nOnGroupAdvance;
+	u32 m_nOnGroupSeek;
+	u32 m_nOnLeaderReadabilitySeek;
+	u32 m_nOnGroupCover;
+	u32 m_nAddDangerPoint;
+	u32 m_nOnLeaderReadabilityAlarm;
+	u32 m_nOnAdvanceTargetCompromised;
+	u32 m_nOnGroupCohesionTest;
+	u32 m_nOnGroupTestReadabilityCohesion;
+	u32 m_nOnGroupTestReadabilityAdvance;
+	u32 m_nOnGroupAdvanceTest;
+	u32 m_nOnLeaderReadabilityAdvanceLeft;
+	u32 m_nOnLeaderReadabilityAdvanceRight;
+	u32 m_nOnLeaderReadabilityAdvanceForward;
+	u32 m_nOnGroupTurnAmbient;
+	u32 m_nOnGroupTurnAttack;
+	u32 m_nOnShapeEnabled;
+	u32 m_nOnShapeDisabled;
+	u32 m_nOnCloseContact;
+	u32 m_nOnTargetDead;
+	u32 m_nOnEndPathOffset;
+	u32 m_nOnPathFindAtStart;
+	u32 m_nOnPathFound;
+	u32 m_nOnBackOffFailed;
+	u32 m_nOnBadHideSpot;
+	u32 m_nOnCoverReached;
+	u32 m_nOnTPSDestinationNotFound;
+	u32 m_nOnTPSDestinationFound;
+	u32 m_nOnTPSDestinationReached;
+	u32 m_nOnRightLean;
+	u32 m_nOnLeftLean;
+	u32 m_nOnLowHideSpot;
+	u32 m_nOnChargeStart;
+	u32 m_nOnChargeHit;
+	u32 m_nOnChargeMiss;
+	u32 m_nOnChargeBailOut;
+	u32 m_nOnMovingToCover;
+	u32 m_nOnMovingInCover;
+	u32 m_nOnEnterCover;
+	u32 m_nOnLeaveCover;
+	u32 m_nOnCoverCompromised;
+	u32 m_nOnCoverLocationCompromised;
+	u32 m_nOnHighCover;
+	u32 m_nOnLowCover;
+	u32 m_nOnNoAimPosture;
+	u32 m_nOnNoPeekPosture;
+	u32 m_nORDER_IDLE;
+	u32 m_nOnNoGroupTarget;
+	u32 m_nOnLeaderTooFar;
+	u32 m_nOnEnemySteady;
+	u32 m_nOnShootSpotFound;
+	u32 m_nOnShootSpotNotFound;
+	u32 m_nOnLeaderStop;
+	u32 m_nOnUnitMoving;
+	u32 m_nOnUnitStop;
+	u32 m_nORDER_EXIT_VEHICLE;
+	u32 m_nOnNoFormationPoint;
+	u32 m_nOnTargetApproaching;
+	u32 m_nOnTargetFleeing;
+	u32 m_nOnNoTargetVisible;
+	u32 m_nOnNoTargetAwareness;
+	u32 m_nOnNoHidingPlace;
+	u32 m_nOnLowAmmo;
+	u32 m_nOnOutOfAmmo;
+	u32 m_nOnReloaded;
+	u32 m_nOnMeleeExecuted;
+	u32 m_nOnPlayerLooking;
+	u32 m_nOnPlayerSticking;
+	u32 m_nOnPlayerLookingAway;
+	u32 m_nOnPlayerGoingAway;
+	u32 m_nOnTargetTooClose;
+	u32 m_nOnTargetTooFar;
+	u32 m_nOnFriendInWay;
+	u32 m_nOnUseSmartObject;
+	u32 m_nOnAvoidDanger;
+	u32 m_nOnRequestUpdateTowards;
+	u32 m_nOnRequestUpdateAlternative;
+	u32 m_nOnClearSpotList;
+	u32 m_nOnSetPredictionTime;
+	u32 m_nOnInterestSystemEvent;
+	u32 m_nOnCheckDeadTarget;
+	u32 m_nOnCheckDeadBody;
+	u32 m_nOnSpecialAction;
+	u32 m_nOnNewAttentionTarget;
+	u32 m_nOnAttentionTargetThreatChanged;
+};
+
+#endif

@@ -1,0 +1,32 @@
+noblitz;
+
+uses
+	drx3D/DinrusXAudio,
+	drx3D/code/DinrusXAudio/implementations/DrxAudioImplPortAudio;
+
+link(CLANG) "-lntdll -lDinrusXFont.dll -lDinrusX.dll";
+
+file
+	DrxAudioSystem.cpp,
+	ATL.cpp,
+	ATLAudioObject.cpp,
+	ATLEntities.cpp,
+	AudioCVars.cpp,
+	AudioEventListenerUpr.cpp,
+	AudioEventUpr.cpp,
+	AudioImpl.cpp,
+	AudioListenerUpr.cpp,
+	AudioObjectUpr.cpp,
+	AudioRequests.cpp,
+	AudioStandaloneFileUpr.cpp,
+	AudioSystem.cpp,
+	AudioXMLProcessor.cpp,
+	DinrusXAudioSys.rc,
+	FileCacheUpr.cpp,
+	InternalEntities.cpp,
+	PropagationProcessor.cpp,
+	stdafx.cpp;
+
+mainconfig
+	"DinrusXAudio.dll" = "DLL";
+

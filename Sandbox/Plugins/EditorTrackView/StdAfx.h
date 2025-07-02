@@ -1,0 +1,45 @@
+// Разработка 2018-2025 DinrusPro / Dinrus Group. РНЦП Динрус.
+
+#pragma once
+
+#pragma warning(disable: 4103) // '...\stlport\stl\_cprolog.h' : alignment changed after including header, may be due to missing #pragma pack(pop)
+
+/////////////////////////////////////////////////////////////////////////////
+// CRY Stuff ////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+#include <drx3D/CoreX/Project/DrxModuleDefs.h>
+#include <drx3D/CoreX/Platform/platform.h>
+
+#define DRX_USE_ATL
+#define DRX_USE_MFC
+#include <drx3D/CoreX/Platform/DrxAtlMfc.h>
+#include <drx3D/CoreX/Project/ProjectDefines.h>
+
+/////////////////////////////////////////////////////////////////////////////
+// STL
+/////////////////////////////////////////////////////////////////////////////
+#include <vector>
+#include <list>
+#include <map>
+#include <set>
+#include <algorithm>
+#include <memory>
+
+/////////////////////////////////////////////////////////////////////////////
+// CRY Stuff ////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+
+#define TSmartPtr _smart_ptr
+#define SMARTPTR_TYPEDEF(Class) typedef _smart_ptr<Class> Class ## Ptr
+
+#include <DrxSystem/ISystem.h>
+#include "Util/EditorUtils.h"
+#include "IEditor.h"
+#include "EditorCommon.h"
+
+IEditor* GetIEditor();
+
+#if defined(GetObject)
+	#undef GetObject
+#endif
+

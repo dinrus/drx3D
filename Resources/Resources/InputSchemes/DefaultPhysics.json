@@ -1,0 +1,189 @@
+{
+  "axes": {
+    "mouseX": {
+      "type": "compound",
+      "axes": [
+        {
+          "type": "mouse",
+          "axis": 0,
+          "scale": 0.15
+        },
+        {
+          "type": "joystick",
+          "port": 0,
+          "axis": 2,
+          "scale": -0.06
+        }
+      ],
+      "scale": 1.0
+    },
+    "mouseY": {
+      "type": "compound",
+      "axes": [
+        {
+          "type": "mouse",
+          "axis": 1,
+          "scale": 0.15
+        },
+        {
+          "type": "joystick",
+          "port": 0,
+          "axis": 3,
+          "scale": -0.06
+        }
+      ],
+      "scale": 1.0
+    },
+    "forward": {
+      "type": "compound",
+      "axes": [
+        {
+          "type": "button",
+          "negative": {
+            "type": "keyboard",
+            "key": 83,
+            "inverted": false
+          },
+          "positive": {
+            "type": "keyboard",
+            "key": 87,
+            "inverted": false
+          },
+          "scale": 1.0
+        },
+        {
+          "type": "joystick",
+          "port": 0,
+          "axis": 1,
+          "scale": 1.0
+        }
+      ],
+      "scale": 1.0
+    },
+    "strafe": {
+      "type": "compound",
+      "axes": [
+        {
+          "type": "button",
+          "negative": {
+            "type": "keyboard",
+            "key": 68,
+            "inverted": false
+          },
+          "positive": {
+            "type": "keyboard",
+            "key": 65,
+            "inverted": false
+          },
+          "scale": 1.0
+        },
+        {
+          "type": "joystick",
+          "port": 0,
+          "axis": 0,
+          "scale": 1.0
+        }
+      ],
+      "scale": 1.0
+    }
+  },
+  "buttons": {
+    "fullscreen": {
+      "type": "keyboard",
+      "key": 300,
+      "inverted": false
+    },
+    "screenshot": {
+      "type": "keyboard",
+      "key": 298,
+      "inverted": false
+    },
+    "exit": {
+      "type": "keyboard",
+      "key": 261,
+      "inverted": false
+    },
+    "jump": {
+      "type": "compound",
+      "buttons": [
+        {
+          "type": "keyboard",
+          "key": 32,
+          "inverted": false
+        },
+        {
+          "type": "joystick",
+          "port": 0,
+          "button": 0,
+          "inverted": false
+        }
+      ],
+      "inverted": false
+    },
+    "crouch": {
+      "type": "compound",
+      "buttons": [
+        {
+          "type": "keyboard",
+          "key": 341,
+          "inverted": false
+        },
+        {
+          "type": "joystick",
+          "port": 0,
+          "button": 0,
+          "inverted": false
+        }
+      ],
+      "inverted": false
+    },
+    "sprint": {
+      "type": "compound",
+      "buttons": [
+        {
+          "type": "keyboard",
+          "key": 340,
+          "inverted": false
+        },
+        {
+          "type": "joystick",
+          "port": 0,
+          "button": 0,
+          "inverted": false
+        }
+      ],
+      "inverted": false
+    },
+    "spawnSphere": {
+      "type": "mouse",
+      "button": 0,
+      "inverted": false
+    },
+    "captureMouse": {
+      "type": "compound",
+      "buttons": [
+        {
+          "type": "keyboard",
+          "key": 256,
+          "inverted": false
+        },
+        {
+          "type": "keyboard",
+          "key": 77,
+          "inverted": false
+        }
+      ],
+      "inverted": false
+    },
+    "save": {
+      "type": "keyboard",
+      "key": 75,
+      "inverted": false
+    },
+    "noclip": {
+      "type": "keyboard",
+      "key": 78,
+      "inverted": false
+    }
+  }
+}

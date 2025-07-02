@@ -1,0 +1,10 @@
+description "\37756,170,0";
+
+noblitz;
+
+file
+	eglRendererPlugin.h,
+	eglRendererPlugin.cpp,
+	eglRendererVisualShapeConverter.cpp,
+	eglRendererVisualShapeConverter.h;
+

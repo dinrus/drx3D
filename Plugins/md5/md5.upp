@@ -1,0 +1,7 @@
+uses
+	drx/Core;
+
+file
+	md5.cpp,
+	md5.h;
+

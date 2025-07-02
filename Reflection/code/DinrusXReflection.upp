@@ -1,0 +1,15 @@
+uses
+	drx3D/DinrusXReflection;
+
+link(WIN32) "-lntdll -lDinrusX.dll";
+
+file
+	ReflectedFunctionDesc.cpp,
+	ReflectedTypeDesc.cpp,
+	ReflectedVariableDesc.cpp,
+	ReflectionRegistry.cpp,
+	StdAfx.cpp;
+
+mainconfig
+	"DinrusXReflection.dll" = "DLL";
+

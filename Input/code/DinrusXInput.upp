@@ -1,0 +1,34 @@
+noblitz;
+
+uses
+	drx3D/DinrusXInput;
+
+link(WIN32) "-lversion -lvfw32 -lshell32 -lkernel32 -luser32 -lpsapi -lwininet -lwinmm -lshlwapi -lntdll  -luuid -limm32 -loleaut32 -lshell32  -lole32 -lgdi32 -ldxguid -lxinput9_1_0 -ldinput8 -lDinrusX.dll";
+
+pkg_config(POSIX) SDL2;
+
+file
+	DinrusXInput.rc,
+	BaseInput.cpp,
+	DrxInput.cpp,
+	DXInput.cpp,
+	DXInputDevice.cpp,
+	EyeTrackerInput.cpp,
+	InputCVars.cpp,
+	InputDevice.cpp,
+	Keyboard.cpp,
+	LinuxInput.cpp,
+	Mouse.cpp,
+	SDLKeyboard.cpp,
+	SDLMouse.cpp,
+	SDLPad.cpp,
+	StdAfx.cpp,
+	SynergyContext.cpp,
+	SynergyKeyboard.cpp,
+	SynergyMouse.cpp,
+	XInputDevice.cpp;
+
+mainconfig
+	"DinrusIXnput.dll" = "DLL",
+	"" = "";
+

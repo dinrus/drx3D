@@ -1,0 +1,9 @@
+description "\37756,170,0";
+
+noblitz;
+
+file
+	fileIOPlugin.h,
+	zipFileIO.h,
+	fileIOPlugin.cpp;
+

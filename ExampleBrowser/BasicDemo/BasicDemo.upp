@@ -1,0 +1,8 @@
+uses
+	drx3D;
+
+file
+	BasicExample.h,
+	code/BasicExample.cpp,
+	code/main.cpp;
+

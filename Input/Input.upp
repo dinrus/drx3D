@@ -1,0 +1,57 @@
+description "\377B56,127,255";
+
+noblitz;
+
+options
+	"-D _LIB";
+
+options(MB) "-D DRX_IS_MONOLITHIC_BUILD";
+
+file
+	Synergy\SynergyContext.h,
+	Synergy\SynergyKeyboard.h,
+	Synergy\SynergyMouse.h,
+	BaseInput.h,
+	DinrusXInput.h,
+	DXInput.h,
+	DXInputDevice.h,
+	EyeTrackerInput.h,
+	IHardwareMouse.h,
+	IInput.h,
+	IJoystick.h,
+	InputDevice.h,
+	Keyboard.h,
+	KinectInputNULL.h,
+	LinuxInput.h,
+	Mouse.h,
+	NaturalPointInputNULL.h,
+	OrbisPadWin.h,
+	resource.h,
+	SDLKeyboard.h,
+	InputCVars.h,
+	SDLMouse.h,
+	SDLPad.h,
+	StdAfx.h,
+	XInputDevice.h,
+	HeadmountedDevice/HeadMountedDevice.h,
+	code readonly separator,
+	code/BaseInput.cpp,
+	code/DrxInput.cpp,
+	code/DXInput.cpp,
+	code/DXInputDevice.cpp,
+	code/EyeTrackerInput.cpp,
+	code/InputCVars.cpp,
+	code/InputDevice.cpp,
+	code/Keyboard.cpp,
+	code/LinuxInput.cpp,
+	code/Mouse.cpp,
+	code/SDLKeyboard.cpp,
+	code/SDLMouse.cpp,
+	code/SDLPad.cpp,
+	code/StdAfx.cpp,
+	code/SynergyContext.cpp,
+	code/SynergyKeyboard.cpp,
+	code/SynergyMouse.cpp,
+	code/XInputDevice.cpp,
+	end readonly separator;
+

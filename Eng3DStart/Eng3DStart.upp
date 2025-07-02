@@ -1,0 +1,28 @@
+description "Программа, проверяющая и запускающая 3-мерный движок\377";
+
+flags
+	USEMALLOC;
+
+uses
+	drx3D/Sys,
+	drx3D/CoreX;
+
+library
+	SDL2;
+
+options
+	"-D _LIB";
+
+options(MB) "-D DRX_IS_MONOLITHIC_BUILD";
+
+file
+	assert.h,
+	Main.cpp,
+	StdAfx.cpp,
+	StdAfx.h;
+
+mainconfig
+	"" = "",
+	"" = "MB",
+	"" = "";
+

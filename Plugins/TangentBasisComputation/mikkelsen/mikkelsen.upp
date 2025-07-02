@@ -1,0 +1,7 @@
+noblitz;
+
+file
+	mikktspace.cpp,
+	mikktspace.h,
+	mikktspace_original.cpp;
+

@@ -1,0 +1,11 @@
+uses
+	drx3D;
+
+file
+	code/geometry.cpp,
+	code/main.cpp,
+	code/model.cpp,
+	code/our_gl.cpp,
+	code/tgaimage.cpp,
+	code/TinyRenderer.cpp;
+

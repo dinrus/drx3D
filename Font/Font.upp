@@ -1,0 +1,34 @@
+description "\377B56,127,255";
+
+noblitz;
+
+options
+	"-D _LIB";
+
+options(MB) "-D DRX_IS_MONOLITHIC_BUILD";
+
+file
+	drxFont.h,
+	FBitmap.h,
+	FFont.h,
+	FontRenderer.h,
+	FontTexture.h,
+	GlyphBitmap.h,
+	GlyphCache.h,
+	IFont.h,
+	NullFont.h,
+	resource.h,
+	StdAfx.h,
+	code readonly separator,
+	code/DrxFont.cpp,
+	code/FFont.cpp,
+	code/FFontXML.cpp,
+	code/FontRenderer.cpp,
+	code/FontTexture.cpp,
+	code/GlyphBitmap.cpp,
+	code/GlyphCache.cpp,
+	code/IDrxFont.cpp,
+	code/NullFont.cpp,
+	code/StdAfx.cpp,
+	end readonly separator;
+

@@ -1,0 +1,20 @@
+uses
+	drx3D/DinrusXLiveCreate;
+
+link(WIN32) "-lntdll -lDinrusX.dll";
+
+file
+	DrxLiveCreate.cpp,
+	LiveCreate_Objects.cpp,
+	LiveCreate_System.cpp,
+	LiveCreateHost.cpp,
+	LiveCreateNativeFile.cpp,
+	LiveCreateUpr.cpp,
+	PlatformHandler_Any.cpp,
+	PlatformHandler_GamePC.cpp,
+	PlatformHandlerBase.cpp,
+	StdAfx.cpp;
+
+mainconfig
+	"DinrusXLiveCreate.dll" = "DLL";
+

@@ -1,0 +1,53 @@
+description "\377B56,127,255";
+
+noblitz;
+
+uses
+	drx/plugin/lua;
+
+options
+	"-D _LIB";
+
+options(MB) "-D DRX_IS_MONOLITHIC_BUILD";
+
+file
+	BucketAllocator.h,
+	FunctionHandler.h,
+	IScriptSystem.h,
+	LuaDebuggerResource.h,
+	LuaRemoteDebug.h,
+	resource.h,
+	ScriptBind_Movie.h,
+	ScriptBind_Particle.h,
+	ScriptBind_Physics.h,
+	ScriptBind_Script.h,
+	ScriptBind_Sound.h,
+	ScriptBind_System.h,
+	ScriptBinding.h,
+	ScriptHelpers.h,
+	ScriptSystem.h,
+	ScriptTable.h,
+	ScriptTimerMgr.h,
+	SerializationHelper.h,
+	StackGuard.h,
+	StdAfx.h,
+	SurfaceTypes.h,
+	code readonly separator,
+	code/DrxScriptSystem.cpp,
+	code/FunctionHandler.cpp,
+	code/LuaRemoteDebug.cpp,
+	code/ScriptBind_Movie.cpp,
+	code/ScriptBind_Particle.cpp,
+	code/ScriptBind_Physics.cpp,
+	code/ScriptBind_Script.cpp,
+	code/ScriptBind_Sound.cpp,
+	code/ScriptBind_System.cpp,
+	code/ScriptBinding.cpp,
+	code/ScriptSystem.cpp,
+	code/ScriptTable.cpp,
+	code/ScriptTimerMgr.cpp,
+	code/StdAfx.cpp,
+	code/SurfaceTypes.cpp,
+	code/vectorlib.c,
+	end readonly separator;
+

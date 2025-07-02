@@ -1,0 +1,60 @@
+noblitz;
+
+uses
+	drx3D/DinrusXEntity;
+
+link(WIN32) "-lDinrusX.dll -lntdll";
+
+file
+	AffineParts.cpp,
+	Area.cpp,
+	AreaGrid.cpp,
+	AreaProxy.cpp,
+	AreaSolid.cpp,
+	AreaUpr.cpp,
+	BreakablePlane.cpp,
+	BreakableUpr.cpp,
+	BSPTree3D.cpp,
+	CameraProxy.cpp,
+	CharacterBoneAttachmentUpr.cpp,
+	ClipVolumeProxy.cpp,
+	DrxEntityDLL.cpp,
+	DinrusXEntitySys.rc,
+	DynamicResponseProxy.cpp,
+	Entity.cpp,
+	EntityArchetype.cpp,
+	EntityAudioProxy.cpp,
+	EntityClass.cpp,
+	EntityClassRegistry.cpp,
+	EntityComponentsCache.cpp,
+	EntityComponentsVector.cpp,
+	EntityCVars.cpp,
+	EntityLayer.cpp,
+	EntityLoadUpr.cpp,
+	EntityNodeProxy.cpp,
+	EntityObjectDebugger.cpp,
+	EntityScript.cpp,
+	EntitySlot.cpp,
+	EntitySystem.cpp,
+	EntityUnitTests.cpp,
+	EntityUtilsComponent.cpp,
+	FlowGraphProxy.cpp,
+	GeomCacheAttachmentUpr.cpp,
+	NetEntity.cpp,
+	PartitionGrid.cpp,
+	PhysicsEventListener.cpp,
+	PhysicsProxy.cpp,
+	ProximityTriggerSystem.cpp,
+	RadixSort.cpp,
+	RenderProxy.cpp,
+	RopeProxy.cpp,
+	ScriptBind_Entity.cpp,
+	ScriptProperties.cpp,
+	ScriptProxy.cpp,
+	stdafx.cpp,
+	SubstitutionProxy.cpp,
+	TriggerProxy.cpp;
+
+mainconfig
+	"DinrusXEntitySys.dll" = "DLL";
+

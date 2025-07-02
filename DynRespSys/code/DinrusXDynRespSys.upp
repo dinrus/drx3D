@@ -1,0 +1,42 @@
+noblitz;
+
+uses
+	drx3D/DinrusXDynRespSys;
+
+link(WIN32) "-lntdll -lDinrusX.dll";
+
+file
+	DinrusXDynRespSys.rc,
+	ActionCancelSignal.cpp,
+	ActionCopyVariable.cpp,
+	ActionExecuteResponse.cpp,
+	ActionResetTimer.cpp,
+	ActionSendSignal.cpp,
+	ActionSetActor.cpp,
+	ActionSetGameToken.cpp,
+	ActionSetVariable.cpp,
+	ActionSpeakLine.cpp,
+	ActionWait.cpp,
+	ConditionImpl.cpp,
+	ConditionsCollection.cpp,
+	DrxDynamicResponseSystem.cpp,
+	DelayActionAction.cpp,
+	DialogLineDatabase.cpp,
+	Response.cpp,
+	ResponseInstance.cpp,
+	ResponseUpr.cpp,
+	ResponseSegment.cpp,
+	ResponseSystem.cpp,
+	ResponseSystemDataImportHelper.cpp,
+	ResponseSystemDebugDataProvider.cpp,
+	SchematycEntityDrsComponent.cpp,
+	SpeakerUpr.cpp,
+	SpecialConditionsImpl.cpp,
+	stdafx.cpp,
+	Variable.cpp,
+	VariableCollection.cpp,
+	VariableValue.cpp;
+
+mainconfig
+	"" = "DLL";
+

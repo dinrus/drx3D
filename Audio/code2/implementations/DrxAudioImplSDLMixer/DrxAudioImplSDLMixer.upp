@@ -1,0 +1,24 @@
+noblitz;
+
+link(CLANG) "-lntdll -lDinrusXFont.dll -lDinrusX.dll";
+
+file
+	AudioImpl.h,
+	AudioImplCVars.h,
+	GlobalData.h,
+	SoundEngine.h,
+	SoundEngineTypes.h,
+	SoundEngineUtil.h,
+	stdafx.h,
+	code readonly separator,
+	code/AudioImpl.cpp,
+	code/AudioImplCVars.cpp,
+	code/DrxAudioImpl.cpp,
+	code/SoundEngine.cpp,
+	code/SoundEngineTypes.cpp,
+	code/stdafx.icpp,
+	end readonly separator;
+
+mainconfig
+	"DinrusXAudioSys.dll" = "DLL";
+

@@ -1,0 +1,56 @@
+description "\377B56,127,255";
+
+noblitz;
+
+options
+	"-D _LIB";
+
+options(MB) "-D DRX_IS_MONOLITHIC_BUILD";
+
+file
+	ATL.h,
+	ATLAudioObject.h,
+	ATLEntities.h,
+	ATLEntityData.h,
+	ATLUtils.h,
+	AudioCVars.h,
+	AudioEventListenerUpr.h,
+	AudioEventUpr.h,
+	AudioImpl.h,
+	AudioInternalInterfaces.h,
+	AudioListenerUpr.h,
+	AudioObjectUpr.h,
+	AudioStandaloneFileUpr.h,
+	AudioSystem.h,
+	AudioXMLProcessor.h,
+	FileCacheUpr.h,
+	IAudioImpl.h,
+	InternalEntities.h,
+	Logger.h,
+	PoolObject.h,
+	PoolObject_impl.h,
+	PropagationProcessor.h,
+	resource.h,
+	SharedAudioData.h,
+	StdAfx.h,
+	code readonly separator,
+	code2/ATL.cpp,
+	code2/ATLAudioObject.cpp,
+	code2/ATLEntities.cpp,
+	code2/AudioCVars.cpp,
+	code2/AudioEventListenerUpr.cpp,
+	code2/AudioEventUpr.cpp,
+	code2/AudioImpl.cpp,
+	code2/AudioListenerUpr.cpp,
+	code2/AudioObjectUpr.cpp,
+	code2/AudioRequests.cpp,
+	code2/AudioStandaloneFileUpr.cpp,
+	code2/AudioSystem.cpp,
+	code2/AudioXMLProcessor.cpp,
+	code2/DrxAudioSystem.cpp,
+	code2/FileCacheUpr.cpp,
+	code2/InternalEntities.cpp,
+	code2/PropagationProcessor.cpp,
+	code2/stdafx.cpp,
+	end readonly separator;
+

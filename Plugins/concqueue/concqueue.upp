@@ -1,0 +1,7 @@
+file
+	concqueue-mpmc-bounded.hpp,
+	concqueue-mpsc.hpp,
+	concqueue-spsc-bounded.hpp,
+	concqueue-spsc.hpp,
+	concqueue.hpp;
+

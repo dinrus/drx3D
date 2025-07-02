@@ -1,0 +1,20 @@
+description "\37756,170,0";
+
+noblitz;
+
+file
+	BulletConversion.cpp,
+	BulletConversion.h,
+	KinTree.cpp,
+	KinTree.h,
+	MathUtil.cpp,
+	MathUtil.h,
+	RBDModel.cpp,
+	RBDModel.h,
+	RBDUtil.cpp,
+	RBDUtil.h,
+	Shape.cpp,
+	Shape.h,
+	SpAlg.cpp,
+	SpAlg.h;
+

@@ -1,0 +1,9 @@
+uses
+	drx3D;
+
+options
+	"-D DRX3D_NO_GLAD";
+
+file
+	main.cpp;
+

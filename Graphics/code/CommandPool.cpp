@@ -1,0 +1,22 @@
+#include <drx3D/Graphics/Commands/CommandPool.h>
+#include <drx3D/Graphics/Graphics.h>
+
+namespace drx3d {
+CommandPool::CommandPool(const std::thread::id &threadId) :
+	threadId(threadId) {
+	auto logicalDevice = Graphics::Get()->GetLogicalDevice();
+	auto graphicsFamily = logicalDevice->GetGraphicsFamily();
+
+	VkCommandPoolCreateInfo commandPoolCreateInfo = {};
+	commandPoolCreateInfo.sType = VK_STRUCTURE_TYPE_COMMAND_POOL_CREATE_INFO;
+	commandPoolCreateInfo.flags = VK_COMMAND_POOL_CREATE_TRANSIENT_BIT | VK_COMMAND_POOL_CREATE_RESET_COMMAND_BUFFER_BIT;
+	commandPoolCreateInfo.queueFamilyIndex = graphicsFamily;
+	Graphics::CheckVk(vkCreateCommandPool(*logicalDevice, &commandPoolCreateInfo, nullptr, &commandPool));
+}
+
+CommandPool::~CommandPool() {
+	auto logicalDevice = Graphics::Get()->GetLogicalDevice();
+
+	vkDestroyCommandPool(*logicalDevice, commandPool, nullptr);
+}
+}

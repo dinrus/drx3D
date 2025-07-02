@@ -1,0 +1,19 @@
+uses
+	drx3D/DinrusXPhysX;
+
+file
+	articulatedent.cpp,
+	baseent.cpp,
+	clothent.cpp,
+	DrxPhysics.cpp,
+	DrxPhysX.cpp,
+	geometries.cpp,
+	livingent.cpp,
+	projectileent.cpp,
+	ropeent.cpp,
+	vehicleent.cpp,
+	world.cpp;
+
+mainconfig
+	"DinrusXPhysX.dll" = "DLL";
+

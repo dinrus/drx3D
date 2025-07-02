@@ -1,0 +1,13 @@
+// Разработка 2018-2025 DinrusPro / Dinrus Group. РНЦП Динрус.
+
+#ifndef __INTERACTIVE_OBJECT_ENUMS_H__
+#define __INTERACTIVE_OBJECT_ENUMS_H__
+
+enum EInteractiveObjectInteractionType
+{
+	EIT_Interact = 0, //Default interaction (For single use objects)
+	EIT_Open,
+	EIT_Close,
+};
+
+#endif //__INTERACTIVE_OBJECT_ENUMS_H__

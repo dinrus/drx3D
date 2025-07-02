@@ -1,0 +1,26 @@
+{
+  "joysticks": {},
+  "axes": [],
+  "buttons": {
+    "fullscreen": {
+      "type": "keyboard",
+      "key": 300,
+      "inverted": false
+    },
+    "screenshot": {
+      "type": "keyboard",
+      "key": 298,
+      "inverted": false
+    },
+    "exit": {
+      "type": "keyboard",
+      "key": 261,
+      "inverted": false
+    },
+    "reset": {
+      "type": "keyboard",
+      "key": 257,
+      "inverted": false
+    }
+  }
+}

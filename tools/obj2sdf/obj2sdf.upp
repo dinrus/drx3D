@@ -1,0 +1,6 @@
+uses
+	drx3D;
+
+file
+	obj2sdf.cpp;
+

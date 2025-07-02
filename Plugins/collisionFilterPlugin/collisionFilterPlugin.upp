@@ -1,0 +1,8 @@
+description "\37756,170,0";
+
+noblitz;
+
+file
+	collisionFilterPlugin.cpp,
+	collisionFilterPlugin.h;
+

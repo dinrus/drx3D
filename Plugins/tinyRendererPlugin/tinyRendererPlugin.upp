@@ -1,0 +1,10 @@
+description "\37756,170,0";
+
+noblitz;
+
+file
+	tinyRendererPlugin.h,
+	TinyRendererVisualShapeConverter.h,
+	tinyRendererPlugin.cpp,
+	TinyRendererVisualShapeConverter.cpp;
+

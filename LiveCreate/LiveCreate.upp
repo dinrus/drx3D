@@ -1,0 +1,36 @@
+description "\377B56,127,255";
+
+options
+	"-D _LIB";
+
+file
+	DrxLiveCreate.h,
+	ILiveCreateCommon.h,
+	ILiveCreateHost.h,
+	ILiveCreatePlatform.h,
+	ILiveCreateUpr.h,
+	IRealtimeRemoteUpdate.h,
+	LiveCreate_Objects.h,
+	LiveCreate_System.h,
+	LiveCreateBuilds.h,
+	LiveCreateCommands.h,
+	LiveCreateHost.h,
+	LiveCreateNativeFile.h,
+	LiveCreateUpr.h,
+	PlatformHandler_Any.h,
+	PlatformHandler_GamePC.h,
+	PlatformHandlerBase.h,
+	StdAfx.h,
+	code readonly separator,
+	code/DrxLiveCreate.cpp,
+	code/LiveCreate_Objects.cpp,
+	code/LiveCreate_System.cpp,
+	code/LiveCreateHost.cpp,
+	code/LiveCreateNativeFile.cpp,
+	code/LiveCreateUpr.cpp,
+	code/PlatformHandler_Any.cpp,
+	code/PlatformHandler_GamePC.cpp,
+	code/PlatformHandlerBase.cpp,
+	code/StdAfx.cpp,
+	end readonly separator;
+

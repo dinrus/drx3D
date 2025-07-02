@@ -1,0 +1,8 @@
+file
+	DrxPhysX.h,
+	entities.h,
+	geometries.h,
+	resource.h,
+	StdAfx.h,
+	world.h;
+

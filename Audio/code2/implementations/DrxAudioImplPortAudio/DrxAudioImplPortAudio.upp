@@ -1,0 +1,25 @@
+uses
+	drx/plugin/portaudio;
+
+file
+	ATLEntities.h,
+	AudioEvent.h,
+	AudioImpl.h,
+	AudioImplCVars.h,
+	AudioObject.h,
+	AudioTrigger.h,
+	GlobalData.h,
+	stdafx.h,
+	code readonly separator,
+	code/AudioEvent.cpp,
+	code/AudioImpl.cpp,
+	code/AudioImplCVars.cpp,
+	code/AudioObject.cpp,
+	code/AudioTrigger.cpp,
+	code/DrxAudioImpl.cpp,
+	code/stdafx.cpp,
+	end readonly separator;
+
+mainconfig
+	"" = "";
+

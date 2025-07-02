@@ -1,0 +1,59 @@
+description "Библиотека физических эффектов сборки drx3D\377";
+
+noblitz;
+
+uses
+	drx3D/DinrusXPhys;
+
+link(WIN32) "-lntdll -lDinrusX.dll";
+
+file
+	aabbtree.cpp,
+	articulatedentity.cpp,
+	boolean2d.cpp,
+	boolean3d.cpp,
+	boxgeom.cpp,
+	capsulegeom.cpp,
+	cylindergeom.cpp,
+	DinrusXPhys.cpp,
+	DinrusXPhys.rc,
+	geoman.cpp,
+	geometry.cpp,
+	heightfieldbv.cpp,
+	heightfieldgeom.cpp,
+	intersectionchecks.cpp,
+	linunprojectionchecks.cpp,
+	livingentity.cpp,
+	matrixnm.cpp,
+	obbtree.cpp,
+	overlapchecks.cpp,
+	particleentity.cpp,
+	physarea.cpp,
+	physicalentity.cpp,
+	physicalplaceholder.cpp,
+	physicalworld.cpp,
+	qhull.cpp,
+	raybv.cpp,
+	raygeom.cpp,
+	rigidbody.cpp,
+	rigidentity.cpp,
+	ropeentity.cpp,
+	rotunprojectionchecks.cpp,
+	rwi.cpp,
+	singleboxtree.cpp,
+	softentity.cpp,
+	spheregeom.cpp,
+	StdAfx.cpp,
+	tetrlattice.cpp,
+	trimesh.cpp,
+	utils.cpp,
+	voxelbv.cpp,
+	voxelgeom.cpp,
+	walkingrigidentity.cpp,
+	waterman.cpp,
+	wheeledvehicleentity.cpp,
+	worldump.cpp;
+
+mainconfig
+	"DinrusXPhys.dll" = "DLL";
+

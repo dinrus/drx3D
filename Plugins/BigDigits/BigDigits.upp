@@ -1,0 +1,15 @@
+options(WIN32) -DHAVE_C99INCLUDES;
+
+file
+	bigd.c,
+	bigd.h,
+	bigdigits.c,
+	bigdigits.h,
+	bigdigitsRand.c,
+	bigdigitsRand.h,
+	bigdRand.c,
+	bigdRand.h,
+	bigdtypes.h,
+	spExtras.c,
+	spExtras.h;
+

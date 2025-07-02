@@ -1,0 +1,23 @@
+{
+  "animatedMesh": {
+    "filename": "Objects/Animated/Model.dae",
+    "material": {
+      "type": "default",
+      "baseDiffuse": "#ffffff",
+      "imageDiffuse": {
+        "filename": "Objects/Animated/Diffuse.png",
+        "filter": 1,
+        "addressMode": 0,
+        "anisotropic": true,
+        "mipmap": true
+      },
+      "metallic": 0.700000,
+      "roughness": 0.600000,
+      "imageMaterial": null,
+      "imageNormal": null,
+      "castsShadows": true,
+      "ignoreLighting": false,
+      "ignoreFog": false
+    }
+  }
+}

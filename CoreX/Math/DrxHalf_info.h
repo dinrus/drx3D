@@ -1,0 +1,15 @@
+// Разработка 2018-2023 DinrusPro / Dinrus Group. РНЦП Динрус.
+
+#include "DrxHalf.inl"
+
+STRUCT_INFO_BEGIN(DrxHalf2)
+STRUCT_VAR_INFO(x, TYPE_INFO(DrxHalf))
+STRUCT_VAR_INFO(y, TYPE_INFO(DrxHalf))
+STRUCT_INFO_END(DrxHalf2)
+
+STRUCT_INFO_BEGIN(DrxHalf4)
+STRUCT_VAR_INFO(x, TYPE_INFO(DrxHalf))
+STRUCT_VAR_INFO(y, TYPE_INFO(DrxHalf))
+STRUCT_VAR_INFO(z, TYPE_INFO(DrxHalf))
+STRUCT_VAR_INFO(w, TYPE_INFO(DrxHalf))
+STRUCT_INFO_END(DrxHalf4)

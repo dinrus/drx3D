@@ -1,0 +1,16 @@
+# Copyright 2001-2018 Crytek GmbH / Crytek Group. All rights reserved.
+
+def build(bld):	
+	bld.CryPlugin(
+		target          = 'EditorAudioControlsEditor',
+		vs_filter       = 'Sandbox/Plugins/EditorAudioControlsEditor',
+		
+		file_list       = 'editoraudiocontrolseditor.waf_files',
+		pch             = 'StdAfx.cpp',
+		
+		includes	    = [ '..', 'common' ],
+	)
+
+	bld.recurse_subdirs(mandatory=False)
+
+

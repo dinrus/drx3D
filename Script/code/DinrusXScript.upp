@@ -1,0 +1,25 @@
+noblitz;
+
+uses
+	drx3D/DinrusXScript,
+	plugin/lua;
+
+file
+	DinrusXScriptSys.rc,
+	DrxScriptSystem.cpp,
+	FunctionHandler.cpp,
+	ScriptBind_Movie.cpp,
+	ScriptBind_Particle.cpp,
+	ScriptBind_Physics.cpp,
+	ScriptBind_Script.cpp,
+	ScriptBind_Sound.cpp,
+	ScriptBind_System.cpp,
+	ScriptBinding.cpp,
+	ScriptSystem.cpp,
+	ScriptTable.cpp,
+	ScriptTimerMgr.cpp,
+	StdAfx.cpp,
+	SurfaceTypes.cpp,
+	vectorlib.c,
+	end readonly separator;
+

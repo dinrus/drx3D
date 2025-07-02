@@ -1,0 +1,42 @@
+noblitz;
+
+uses
+	drx3D/drx3DMovie;
+
+link(WIN32) "-lntdll -lDinrusX.dll";
+
+file
+	AnimCameraNode.cpp,
+	AnimEnvironmentNode.cpp,
+	AnimGeomCacheNode.cpp,
+	AnimLightNode.cpp,
+	AnimNode.cpp,
+	AnimPostFXNode.cpp,
+	AnimScreenFaderNode.cpp,
+	AnimSequence.cpp,
+	AnimSplineTrack.cpp,
+	AudioNode.cpp,
+	BoolTrack.cpp,
+	CharacterTrack.cpp,
+	CommentNode.cpp,
+	CompoundSplineTrack.cpp,
+	DrxMovie.cpp,
+	CVarNode.cpp,
+	drx3DMovie.rc,
+	EntityNode.cpp,
+	EventNode.cpp,
+	GotoTrack.cpp,
+	LayerNode.cpp,
+	LookAtTrack.cpp,
+	MaterialNode.cpp,
+	Movie.cpp,
+	SceneNode.cpp,
+	ScreenFaderTrack.cpp,
+	ScriptVarNode.cpp,
+	ShadowsSetupNode.cpp,
+	StdAfx.cpp,
+	TimeRangesTrack.cpp;
+
+mainconfig
+	"drx3DMovie.dll" = "DLL";
+

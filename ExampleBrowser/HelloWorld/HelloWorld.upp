@@ -1,0 +1,6 @@
+uses
+	drx3D;
+
+file
+	HelloWorld.cpp;
+
